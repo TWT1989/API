@@ -4,5 +4,5 @@ python:
 
 # command to run tests
 script:
- - import API
+ - python -m unittest test_API
        
