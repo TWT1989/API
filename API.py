@@ -11,7 +11,9 @@ import json
 
 
     
-ID = input('Input GitHub User ID: ')
+
+
+       
 
 
 def api(ID):
@@ -22,8 +24,6 @@ def api(ID):
 
     response = requests.get(URL,data=json.dumps(data))
     response = json.loads(response.text)
-
-    
 
     for x in response:
         print('repo name:') 
@@ -37,9 +37,12 @@ def api(ID):
         print(length)
 
     return URL
-      
 
-print(api(ID))
+    print(api(ID))     
+
+
+
+
 
 
        
